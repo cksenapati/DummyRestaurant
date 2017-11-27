@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="10dp"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+
+
+
+
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/flip_view_transaction_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:flipOnTouch="true"
+        app:flipEnabled="true">
+
+        <!-- Front Layout Goes Here -->
+        <LinearLayout
+            android:id="@+id/linear_layout_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/text_view_amount_paid"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="500.0"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@android:color/holo_blue_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/text_view_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:text="Chandan kumar"/>
+                <TextView
+                    android:id="@+id/text_view_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="5dp"
+                    android:textSize="20sp"
+                    android:text="8763717165"/>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_view_date_of_transaction"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="@android:color/holo_blue_light"
+                android:layout_gravity="center"
+                android:textSize="13sp"
+                android:text="19 th may"/>
+
+        </LinearLayout>
+
+
+        <!-- Back Layout Goes Here -->
+        <LinearLayout
+            android:id="@+id/linear_layout_see_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:layout_margin="5dp"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:textSize="20sp"
+                android:text="See Details"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:background="@android:color/holo_blue_light"
+                android:padding="20dp"
+                android:layout_margin="5dp"
+                android:text="Button"/>
+        </LinearLayout>
+
+
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+
+</LinearLayout>
